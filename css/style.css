@@ -15,8 +15,7 @@ main {
     width: 900px;
     height: 900px;
     margin: 0 auto;
-    border: 3px solid plum;
-    background-color: chartreuse;
+    border: 3px solid purple;
     display: flex;
     flex-wrap: wrap;
 }
@@ -25,4 +24,26 @@ main {
   border: 1px solid blue;
   width: 10%;
   height: 10%;
+  background-color: plum;
 }
+
+.box-level-10 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);;
+}
+.box-level-9 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.box-level-7 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+
+.active {
+    background-color: salmon;
+}
+
+
+

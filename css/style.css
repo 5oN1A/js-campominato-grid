@@ -25,6 +25,10 @@ main {
   width: 10%;
   height: 10%;
   background-color: plum;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
 }
 
 .box-level-10 {

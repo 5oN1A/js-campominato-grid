@@ -6,7 +6,6 @@ const boardContainer = document.getElementById("board-container");
 //2. creazione di una funzione che indica il numero di celle in base ad un livello
 //3. abbinare il numero di celle al livello scelto dell'utente
 
-
 //1.
 playGame.addEventListener("click", function () {
     let level = parseInt(levelSelection.value);
@@ -33,6 +32,8 @@ function levelToBox(level) {
     }
 
     return numberOfBoxes;
+ 
+
 }
 
 
@@ -54,12 +55,16 @@ function boxCreation(totalBoxes) {
         let newBox = document.createElement("div");
         newBox.classList.add("box");  
         newBox.classList.add("box-level-" + numberOfCols);
+        newBox.innerText = index + 1;
         //6
         newBox.addEventListener("click", function (){
             this.classList.toggle("active");
+        
         })
         boardContainer.append(newBox);
     }
+
+  
    
 }
 
